@@ -20,4 +20,10 @@ describe('TaskList', () => {
     await render(<TaskList tasks={[mockTask, anotherTask]} />);
     expect(screen.getByText('2 tareas')).toBeTruthy();
   });
+
+  it('muestra el contador en singular ("1 tarea") cuando solo hay una tarea', async () => {
+    await render(<TaskList tasks={[mockTask]} />);
+    expect(screen.getByText('1 tarea')).toBeTruthy();
+    expect(screen.queryByText('1 tareas')).toBeNull();
+  });
 });

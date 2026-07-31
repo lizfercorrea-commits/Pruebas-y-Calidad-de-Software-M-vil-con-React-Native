@@ -8,6 +8,9 @@ const mockTask = {
   status: 'pending' as const,
 };
 
+// jest.fn(): TaskCard no sabe (ni debe saber) cómo se elimina una tarea de
+// verdad; solo debe invocar el callback que recibe. Usamos un mock para
+// verificar esa invocación sin depender de un TaskList o un backend real.
 const mockOnDelete = jest.fn();
 
 describe('TaskCard', () => {
@@ -36,5 +39,10 @@ describe('TaskCard', () => {
     await fireEvent.press(screen.getByText('Eliminar'));
     expect(mockOnDelete).toHaveBeenCalledWith('1');
     expect(mockOnDelete).toHaveBeenCalledTimes(1);
+  });
+
+  it('el contenedor de la tarjeta es consultable por su rol accesible "button"', async () => {
+    await render(<TaskCard task={mockTask} onDelete={mockOnDelete} />);
+    expect(screen.getByRole('button')).toBeTruthy();
   });
 });
