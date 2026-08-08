@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1785541343390" clover="3.2.0">
-  <project timestamp="1785541343391" name="All files">
-    <metrics statements="71" coveredstatements="65" conditionals="37" coveredconditionals="32" methods="36" coveredmethods="32" elements="144" coveredelements="129" complexity="0" loc="71" ncloc="71" packages="7" files="13" classes="13"/>
+<coverage generated="1786155185743" clover="3.2.0">
+  <project timestamp="1786155185743" name="All files">
+    <metrics statements="82" coveredstatements="79" conditionals="41" coveredconditionals="37" methods="43" coveredmethods="38" elements="166" coveredelements="154" complexity="0" loc="82" ncloc="82" packages="7" files="13" classes="13"/>
     <package name="src">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="types.ts" path="C:\Users\HP\OneDrive\ESPECIALIZACION\7.  Pruebas y Calidad de Software Móvil con React Native\task-manager-testing-lab\src\types.ts">
@@ -12,33 +12,33 @@
       <metrics statements="14" coveredstatements="14" conditionals="13" coveredconditionals="13" methods="9" coveredmethods="8"/>
       <file name="ConfirmDeleteDialog.tsx" path="C:\Users\HP\OneDrive\ESPECIALIZACION\7.  Pruebas y Calidad de Software Móvil con React Native\task-manager-testing-lab\src\components\ConfirmDeleteDialog.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="17" count="7" type="stmt"/>
+        <line num="17" count="16" type="stmt"/>
       </file>
       <file name="TaskCard.tsx" path="C:\Users\HP\OneDrive\ESPECIALIZACION\7.  Pruebas y Calidad de Software Móvil con React Native\task-manager-testing-lab\src\components\TaskCard.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
-        <line num="11" count="13" type="stmt"/>
-        <line num="12" count="13" type="stmt"/>
+        <line num="11" count="26" type="stmt"/>
+        <line num="12" count="26" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
       </file>
       <file name="TaskForm.tsx" path="C:\Users\HP\OneDrive\ESPECIALIZACION\7.  Pruebas y Calidad de Software Móvil con React Native\task-manager-testing-lab\src\components\TaskForm.tsx">
         <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="9" count="10" type="stmt"/>
-        <line num="11" count="10" type="stmt"/>
-        <line num="12" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="16" count="10" type="stmt"/>
+        <line num="9" count="21" type="stmt"/>
+        <line num="11" count="21" type="stmt"/>
+        <line num="12" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="16" count="21" type="stmt"/>
       </file>
       <file name="TaskList.tsx" path="C:\Users\HP\OneDrive\ESPECIALIZACION\7.  Pruebas y Calidad de Software Móvil con React Native\task-manager-testing-lab\src\components\TaskList.tsx">
         <metrics statements="5" coveredstatements="5" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="3"/>
-        <line num="12" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="16" count="4" type="stmt"/>
-        <line num="23" count="9" type="stmt"/>
-        <line num="24" count="5" type="stmt"/>
+        <line num="12" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="16" count="9" type="stmt"/>
+        <line num="23" count="23" type="stmt"/>
+        <line num="24" count="17" type="stmt"/>
       </file>
     </package>
     <package name="src.hooks">
-      <metrics statements="30" coveredstatements="30" conditionals="4" coveredconditionals="4" methods="18" coveredmethods="18"/>
+      <metrics statements="39" coveredstatements="39" conditionals="6" coveredconditionals="5" methods="25" coveredmethods="23"/>
       <file name="useCounter.ts" path="C:\Users\HP\OneDrive\ESPECIALIZACION\7.  Pruebas y Calidad de Software Móvil con React Native\task-manager-testing-lab\src\hooks\useCounter.ts">
         <metrics statements="5" coveredstatements="5" conditionals="1" coveredconditionals="1" methods="6" coveredmethods="6"/>
         <line num="4" count="9" type="stmt"/>
@@ -48,19 +48,28 @@
         <line num="10" count="9" type="stmt"/>
       </file>
       <file name="useCreateTask.ts" path="C:\Users\HP\OneDrive\ESPECIALIZACION\7.  Pruebas y Calidad de Software Móvil con React Native\task-manager-testing-lab\src\hooks\useCreateTask.ts">
-        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
-        <line num="6" count="13" type="stmt"/>
-        <line num="7" count="13" type="stmt"/>
-        <line num="9" count="13" type="stmt"/>
-        <line num="10" count="6" type="stmt"/>
-        <line num="11" count="6" type="stmt"/>
-        <line num="12" count="6" type="stmt"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="14" count="5" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="20" count="13" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="24" count="13" type="stmt"/>
+        <metrics statements="21" coveredstatements="21" conditionals="2" coveredconditionals="1" methods="13" coveredmethods="11"/>
+        <line num="6" count="26" type="stmt"/>
+        <line num="7" count="26" type="stmt"/>
+        <line num="11" count="26" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="15" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="8" type="stmt"/>
+        <line num="17" count="8" type="stmt"/>
+        <line num="18" count="8" type="stmt"/>
+        <line num="22" count="8" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
+        <line num="27" count="26" type="stmt"/>
+        <line num="28" count="7" type="stmt"/>
+        <line num="29" count="7" type="stmt"/>
+        <line num="30" count="7" type="stmt"/>
+        <line num="31" count="5" type="stmt"/>
+        <line num="32" count="5" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="38" count="26" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="42" count="26" type="stmt"/>
       </file>
       <file name="useTaskList.ts" path="C:\Users\HP\OneDrive\ESPECIALIZACION\7.  Pruebas y Calidad de Software Móvil con React Native\task-manager-testing-lab\src\hooks\useTaskList.ts">
         <metrics statements="13" coveredstatements="13" conditionals="3" coveredconditionals="3" methods="6" coveredmethods="6"/>
@@ -88,28 +97,30 @@
       </file>
     </package>
     <package name="src.screens">
-      <metrics statements="8" coveredstatements="5" conditionals="6" coveredconditionals="3" methods="4" coveredmethods="2"/>
+      <metrics statements="8" coveredstatements="5" conditionals="6" coveredconditionals="4" methods="4" coveredmethods="2"/>
       <file name="CreateTaskScreen.tsx" path="C:\Users\HP\OneDrive\ESPECIALIZACION\7.  Pruebas y Calidad de Software Móvil con React Native\task-manager-testing-lab\src\screens\CreateTaskScreen.tsx">
-        <metrics statements="8" coveredstatements="5" conditionals="6" coveredconditionals="3" methods="4" coveredmethods="2"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
+        <metrics statements="8" coveredstatements="5" conditionals="6" coveredconditionals="4" methods="4" coveredmethods="2"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="11" count="10" type="stmt"/>
+        <line num="12" count="10" type="stmt"/>
+        <line num="14" count="13" type="stmt"/>
+        <line num="16" count="10" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
         <line num="39" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="40" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.services">
-      <metrics statements="5" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
       <file name="taskService.ts" path="C:\Users\HP\OneDrive\ESPECIALIZACION\7.  Pruebas y Calidad de Software Móvil con React Native\task-manager-testing-lab\src\services\taskService.ts">
-        <metrics statements="5" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="17" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.utils">

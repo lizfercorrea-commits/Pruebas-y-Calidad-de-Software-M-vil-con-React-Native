@@ -1,0 +1,14 @@
+# Flujo E2E — Actividad 3: crear una tarea de punta a punta.
+# La app es de una sola pantalla (app/index.tsx renderiza CreateTaskScreen
+# directamente), así que no hay un paso de navegación separado: abrir la app
+# YA deja al usuario en la pantalla de crear tarea.
+appId: com.taskmanager.app
+---
+- launchApp
+- assertVisible: "Nueva tarea"
+- tapOn:
+    id: "input-titulo"
+- inputText: "Comprar materiales para la clase"
+- tapOn: "Guardar"
+- assertVisible: "Tarea creada exitosamente"
+- assertVisible: "Comprar materiales para la clase"

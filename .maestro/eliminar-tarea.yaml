@@ -1,0 +1,17 @@
+# Flujo E2E adicional: crear una tarea y luego eliminarla, para cubrir
+# también el diálogo de confirmación (ConfirmDeleteDialog).
+appId: com.taskmanager.app
+---
+- launchApp
+- tapOn:
+    id: "input-titulo"
+- inputText: "Tarea temporal para borrar"
+- tapOn: "Guardar"
+- assertVisible: "Tarea temporal para borrar"
+- tapOn: "Eliminar"
+- assertVisible: "¿Seguro que quieres eliminar"
+# "Confirmar eliminación" no tiene testID propio, solo accessibilityLabel;
+# Maestro también matchea por texto accesible (content-description en
+# Android / accessibilityLabel en iOS), así que se selecciona como texto.
+- tapOn: "Confirmar eliminación"
+- assertNotVisible: "Tarea temporal para borrar"

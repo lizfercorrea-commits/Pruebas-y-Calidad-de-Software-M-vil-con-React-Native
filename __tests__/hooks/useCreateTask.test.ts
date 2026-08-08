@@ -1,6 +1,6 @@
 import { renderHook, act } from '@testing-library/react-native';
 import { useCreateTask } from '../../src/hooks/useCreateTask';
-import { createTask } from '../../src/services/taskService';
+import { createTask, fetchTasks } from '../../src/services/taskService';
 
 // jest.mock(): useCreateTask depende de taskService, que representa la llamada
 // a la API real. La aislamos para que la prueba sea rápida y determinística,
@@ -8,13 +8,20 @@ import { createTask } from '../../src/services/taskService';
 // una API real disponible.
 jest.mock('../../src/services/taskService', () => ({
   createTask: jest.fn(),
+  // fetchTasks resuelve vacío por defecto: estas pruebas son de Actividad 2
+  // y no les interesa la carga inicial desde la API (eso se prueba en
+  // integración, en __tests__/integration/CreateTaskScreen.test.tsx).
+  fetchTasks: jest.fn().mockResolvedValue([]),
 }));
 
 const mockCreateTask = createTask as jest.Mock;
+const mockFetchTasks = fetchTasks as jest.Mock;
 
 describe('useCreateTask', () => {
   beforeEach(() => {
     mockCreateTask.mockClear();
+    mockFetchTasks.mockClear();
+    mockFetchTasks.mockResolvedValue([]);
   });
 
   it('inicia en estado "idle" y sin tareas', async () => {
