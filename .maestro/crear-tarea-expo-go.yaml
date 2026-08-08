@@ -1,0 +1,13 @@
+# Variante del flujo crear-tarea.yaml para correr sobre Expo Go en vez de
+# un build nativo propio. appId host.exp.exponent es el paquete de Expo Go
+# (com.taskmanager.app no aplica acá, porque la app corre dentro de Expo Go,
+# no instalada como app nativa independiente).
+appId: host.exp.exponent
+---
+- assertVisible: "Nueva tarea"
+- tapOn:
+    id: "input-titulo"
+- inputText: "Comprar materiales para la clase"
+- tapOn: "Guardar"
+- assertVisible: "Tarea creada exitosamente"
+- assertVisible: "1 tarea"
